@@ -1,0 +1,26 @@
+algoritmo "media_n_numeros"
+
+var
+  quantidade, i: inteiro
+  numero, soma, media: real 
+
+inicio
+
+  escreval("Digite a quantidade de números que serão utilizados: ")
+  leia(quantidade)
+  soma <- 0
+
+ para i de 1 ate quantidade faca 
+ escreva("Digite o ", i, "º número: ")
+      leia(numero)
+      soma <- soma + numero
+   fimpara
+
+   se quantidade > 0 entao
+   media <- soma / quantidade
+   escreva("A média aritmética dos números inseridos é: ", media)
+   senao
+   escreval("Quantidade inválida.")
+   fimse
+
+fimalgoritmo
